@@ -132,3 +132,29 @@ namespace Primes
         }
     }
 }
+
+// 1. project starts at main method line 97
+// 2. the main method starts out by setting bool whileTrue variable/parameter to "true"
+// 3. a while loop is initiated with signature of parameter whileTrue as "true" (basically making an infinite loop)
+// 4. in this loop a console class method WriteLine is initiated with output "Please provide a number:"
+//      eg. console prints out the message
+// 5. afterwards an if statement is in place to check whether a user provided input is convertable to integer
+//      Console.ReadLine returns a string but any string is convertable to int if it contains only numbers with no other symbols
+//      in other case conversion would fail and:
+// 6. if statement signature is false/failed and thus starts doing all the embedded stuff within
+// 7. writes both messages "Your input is not a valid number." and "Press any key to exit."
+// 8. expects an input of any key to terminate the app
+// 9. meanwhile sets the bool whileTrue parameter to "false"
+//      this bool parameter as "false" will stop the loop because it does not meet the criteria of being "true"
+//      any if statement or loop with a value of boolean with expect value of "true" by default
+//      alternatively it is possible to declare it manually eg. whileTrue == false or whileTrue == true
+//      eg. while(whileTrue == false) {} the loop will only work if the bool parameter is "false"
+//      at the moment of initialization
+// 10. and breaks out of the loop or in this case just freezes and expects user input to close the app
+
+// 6. if statement signature is true/passed the statement embedded stuff is skipped
+// 7. the method IteratePrimes is initiated with its signature of "max"
+//      where "max" is expected as int primitive type see line 27 methods IteratePrimes signature
+//      and in this case the "max" variable is passed as returned output as integer of user inserted input string, see 5. as reference
+
+
