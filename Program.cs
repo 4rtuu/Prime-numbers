@@ -141,6 +141,7 @@ namespace Primes
 // 5. afterwards an if statement is in place to check whether a user provided input is convertable to integer
 //      Console.ReadLine returns a string but any string is convertable to int if it contains only numbers with no other symbols
 //      in other case conversion would fail and:
+
 // 6. if statement signature is false/failed and thus starts doing all the embedded stuff within
 // 7. writes both messages "Your input is not a valid number." and "Press any key to exit."
 // 8. expects an input of any key to terminate the app
@@ -156,5 +157,44 @@ namespace Primes
 // 7. the method IteratePrimes is initiated with its signature of "max"
 //      where "max" is expected as int primitive type see line 27 methods IteratePrimes signature
 //      and in this case the "max" variable is passed as returned output as integer of user inserted input string, see 5. as reference
-
+//                  IteratePrimes(int arg) initialization
+// 8. first off this method on initialization writes a new empty line in console for aesthetics
+// 9. now the logic starts, a loop is initiated with a signature of "max" loops to expect is the provided integer number that
+//      you can find in the IteratePrimes(int argument) method itself as passed value that the method is working with
+//      and a new variable "num" is asigned of integer of 2 and each loop would increment the 2 by one, hence the last part of the
+//      signature "num++"
+//      Increment & Decrement Explenation
+//      🔗 https://www.oreilly.com/library/view/learning-c-30/9780596155018/ch04s04.html
+//      for the sake of logic the "num" argument is assigned 2 instead of any other number
+//      is because the prime numbers are as following example. 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29.
+//      therefore number 1 is not neccessary and is skipped.
+//      so now the loop is going to incement the number 2 by one each time, so by the end of a loop and by starting once again
+//      the "num" instead of being assigned the value of 2 once more, it will increment it thus fulfilling only
+//      the two other parts of the signature, checking wether the "num" argument is smaller or equal to argument "max" and if true
+//      will be incremented +1 thus 2 will result in 3 and the next loop it will be 4
+//      and considering that "max" arg is eg. 5 then if the "num" arg reaches the value of 5 it will stop the loop and continue on
+//      anything right after the for loop
+// 10. thus the first thing that happens during this looping a new argument(variable/parameter - technically an argument
+//      is a signature value that is being expected (eg. line 27), parameter is a global class variable and variable is a local
+//      method variable (eg. line 100) having a value assigned to it on the spot while executing the ongoing logic)
+//      is being assigned.
+//      this boolean variable "check" of assigned value "true" is to later on to define that job is done, eg being assigned
+//      the value of "false"
+// 11. then another loop is being initiated of int var of value 2 (line 167 for explenation on why number 2)
+//      this loop has a bit of more sophisticated logic to its signature
+//      the num arg, taken from the outer loop, is being divided by 2 this is for optimisation reasons,
+//      so that hardware does not keep random uneccessary values into memorey (ignore this for now)
+// 12. an if statement is being passed with a signature of "num % i == 0"
+//      this basically checks if arg "num" modulo arg "i" is equal to "0"
+//      if the value is zero that means that the number is not odd and thus is not a prime number
+//      this is extremely specific scenario and in this case "num % i == 0" would always return false if the result is greater than
+//      or lesser than 0
+//      this results into break operation (line 70 for explenation onto break and continue)
+//      and the loop operation is instantly broken and thus the code runs on continueing the outter loop
+//      IF "num" modulo "i" not 0 and that would mean that the value is odd, what we need...
+//      the outter loop provides anothe if statement expecting "check == true && num != 4"
+//      Soo if arg "check" is equal to to true AND arg "num" is not equal to number 4
+//          the number four check is because I'm lazy and the algorithm threw out number 4 as prime number and this
+//          would count as a quick and dirty fix
+//      By passing the if statement a console.writeline method is initiated and the correct prime number is being printed out
 
