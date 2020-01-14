@@ -1,6 +1,3 @@
-// Introduction to .NET Core
-// 🔗 https://medium.com/net-core/introduction-to-net-core-adbf1962d57d
-
 // Your best buddies ✌
 // 🔗 https://www.google.com
 // 🔗 https://docs.microsoft.com
@@ -135,6 +132,9 @@ namespace Primes
         }
     }
 }
+
+// Introduction to .NET Core
+// 🔗 https://medium.com/net-core/introduction-to-net-core-adbf1962d57d
 
 // 1. project starts at main method line 97
 // 2. the main method starts out by setting bool whileTrue variable/parameter to "true"
