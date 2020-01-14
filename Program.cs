@@ -136,6 +136,9 @@ namespace Primes
 // Introduction to .NET Core
 // 🔗 https://medium.com/net-core/introduction-to-net-core-adbf1962d57d
 
+// ASP.NET Core MVC Web Application (Project Structure)
+// 🔗 https://medium.com/net-core/asp-net-core-mvc-web-application-project-structure-3ccaa244fa66
+
 // 1. project starts at main method line 97
 // 2. the main method starts out by setting bool whileTrue variable/parameter to "true"
 // 3. a while loop is initiated with signature of parameter whileTrue as "true" (basically making an infinite loop)
