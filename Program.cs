@@ -1,3 +1,6 @@
+// Introduction to .NET Core
+// 🔗 https://medium.com/net-core/introduction-to-net-core-adbf1962d57d
+
 // Your best buddies ✌
 // 🔗 https://www.google.com
 // 🔗 https://docs.microsoft.com
